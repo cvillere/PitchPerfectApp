@@ -29,13 +29,29 @@
                                     <action selector="RecordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bGi-hb-f0D"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap To Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKB-G4-0Wv">
+                                <rect key="frame" x="132" y="370.5" width="110.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFN-Jw-iDC">
+                                <rect key="frame" x="147" y="419" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="yKB-G4-0Wv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="47" id="eqG-Sx-UAs"/>
                             <constraint firstItem="TyC-Cc-v8q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kcQ-6e-TqM"/>
                             <constraint firstItem="TyC-Cc-v8q" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="me3-fP-h32"/>
+                            <constraint firstItem="yKB-G4-0Wv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q88-w7-Fwn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recordingLabel" destination="yKB-G4-0Wv" id="z9e-E0-EcT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
